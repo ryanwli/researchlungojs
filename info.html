@@ -16,11 +16,8 @@
 <link rel="stylesheet" href="lungo.css"/>
 <link rel="stylesheet" href="lungo.icon.css"/>
 <link rel="stylesheet" href="theme.lungo.css" id="theme-stylesheet"/>
-    <style type="text/css">
-        strong {
-            display: block;
-        }
-    </style>
+
+
 
 </head>
 <body>
@@ -33,7 +30,7 @@
             <a data-icon="left" data-router="section" href="#login"></a>
         </nav>
         <nav class="right">
-            <a href="#" data-router="article" data-icon="share" class="button theme"></a>
+            <a href="#" data-router="article" data-icon="share"></a>
         </nav>
     </header>
     
@@ -46,6 +43,12 @@
     
     <article id="layout-art1" class="list scroll active">
         <ul class="list">
+            <li style="text-align:center;">
+                <a data-router="section" href="#login">
+                    <strong>有新营业数据，请点击进行同步</strong>
+                    <small>最后一次的同步时间：2013－05－13 12:23:01</small>
+                </a>
+            </li>
             <li class="accept">
                 <a data-router="section" href="#login">
                     <div class="tag right">12</div>
@@ -67,7 +70,7 @@
                 <strong>赠送：<span>¥254.00</span></strong>
             </li>
             <li class="accept">
-                <a data-router="section" href="#login">
+                <a data-router="section" href="#login+">
                     <div class="tag right">3</div>
                     <strong>实际收金额：<span>¥23659.00</span></strong>
                     <small>点击可以查看各种结算方式的收银秦况。</small>
@@ -78,7 +81,7 @@
                 <strong>就餐次数：<span>11次</span></strong>
             </li>
             <li class="secondary">
-                <strong>就餐人数：<span>395</span></strong>
+                <strong>就餐人数：<span>395人</span></strong>
             </li>
             <li class="secondary">
                 <strong>餐均消费：<span>¥2150.82</span></strong>
@@ -125,6 +128,7 @@ Lungo.init({
            name: 'LungoResearch',
            version: '1.0.0.1'
            });
+    
 </script>
 </body>
 </html>
