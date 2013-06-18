@@ -46,7 +46,7 @@
             <li style="text-align:center;" id="liSync">
                 <a data-action="loading" href="#">
                     <strong>有新营业数据，请点击进行同步</strong>
-                    <small>最后一次的同步时间：2013－05－13 12:23:01</small>
+                    <small>最后一次的同步时间：2013-05-13 12:23:01</small>
                 </a>
             </li>
             <li class="accept">
@@ -134,7 +134,7 @@ Lungo.init({
                       'tap section#main a[data-action=loading]': function() {
                         Lungo.Notification.show();
                         setTimeout(Lungo.Notification.hide, 3000);
-                        setTimeout("Lungo.Notification.success('数据同步', '同步成功', 'message', 2);$$('#liSync').hide();", 3500);
+                        setTimeout("Lungo.Notification.success('数据同步成功', '同步时间：\r\n2013-05-13 12:23:01', 'message', 2);$$('#liSync').hide();", 3500);
                       }
                       
                       });
