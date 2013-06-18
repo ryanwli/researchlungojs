@@ -1,0 +1,82 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		B3985832176FF52A0006CFD2 /* info.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = info.html; sourceTree = "<group>"; };
+		B3985833176FF52A0006CFD2 /* lungo.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = lungo.css; sourceTree = "<group>"; };
+		B3985834176FF52A0006CFD2 /* lungo.icon.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = lungo.icon.css; sourceTree = "<group>"; };
+		B3985835176FF52A0006CFD2 /* lungo.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = lungo.js; sourceTree = "<group>"; };
+		B3985836176FF52A0006CFD2 /* quo.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = quo.js; sourceTree = "<group>"; };
+		B3985837176FF52A0006CFD2 /* theme.lungo.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = theme.lungo.css; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		B398582B176FF5040006CFD2 = {
+			isa = PBXGroup;
+			children = (
+				B3985832176FF52A0006CFD2 /* info.html */,
+				B3985833176FF52A0006CFD2 /* lungo.css */,
+				B3985834176FF52A0006CFD2 /* lungo.icon.css */,
+				B3985835176FF52A0006CFD2 /* lungo.js */,
+				B3985836176FF52A0006CFD2 /* quo.js */,
+				B3985837176FF52A0006CFD2 /* theme.lungo.css */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		B398582C176FF5040006CFD2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = B398582F176FF5040006CFD2 /* Build configuration list for PBXProject "LungoResearch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B398582B176FF5040006CFD2;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		B3985830176FF5040006CFD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		B3985831176FF5040006CFD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B398582F176FF5040006CFD2 /* Build configuration list for PBXProject "LungoResearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3985830176FF5040006CFD2 /* Debug */,
+				B3985831176FF5040006CFD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B398582C176FF5040006CFD2 /* Project object */;
+}

@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>Research</title>
+<meta name="description" content="">
+<meta name="author" content="Javier Jiménez Villar (@soyjavi)">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="cleartype" content="on">
+
+<link rel="stylesheet" href="lungo.css"/>
+<link rel="stylesheet" href="lungo.icon.css"/>
+<link rel="stylesheet" href="theme.lungo.css" id="theme-stylesheet"/>
+    <style type="text/css">
+        strong {
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+
+    
+
+<section id="main">
+    <header data-title="聚味轩酒楼" class="extended">
+        <nav>
+            <a data-icon="left" data-router="section" href="#login"></a>
+        </nav>
+        <nav class="right">
+            <a href="#" data-router="article" data-icon="share" class="button theme"></a>
+        </nav>
+    </header>
+    
+    <nav class="groupbar">
+        <a href="#layout-art1" data-router="article" data-label="今天" class="active"></a>
+        <a href="#layout-art2" data-router="article" data-label="昨天" data-count="19"></a>
+        <a href="#layout-art3" data-router="article" data-label="本月"></a>
+        <a href="#layout-art4" data-router="article" data-label="本年"></a>
+    </nav>
+    
+    <article id="layout-art1" class="list scroll active">
+        <ul class="list">
+            <li class="accept">
+                <a data-router="section" href="#login">
+                    <div class="tag right">12</div>
+                    <strong>总营业额：<span>¥23947.00</span></strong>
+                    <small>点击可以查看食物类分的销售情况。</small>
+                </a>
+            </li>
+            <li class="cancel">
+                <strong>折扣：<span>¥0.00</span></strong>
+                <strong></strong>
+            </li>
+            <li class="cancel">
+                <strong>减免：<span>¥34.00</span></strong>
+            </li>
+            <li class="cancel">
+                <strong>抹零：<span>¥0.00</span></strong>
+            </li>
+            <li class="cancel">
+                <strong>赠送：<span>¥254.00</span></strong>
+            </li>
+            <li class="accept">
+                <a data-router="section" href="#login">
+                    <div class="tag right">3</div>
+                    <strong>实际收金额：<span>¥23659.00</span></strong>
+                    <small>点击可以查看各种结算方式的收银秦况。</small>
+                </a>
+            </li>
+            <li class="anchor">其他营业指标：</li>
+            <li class="secondary">
+                <strong>就餐次数：<span>11次</span></strong>
+            </li>
+            <li class="secondary">
+                <strong>就餐人数：<span>395</span></strong>
+            </li>
+            <li class="secondary">
+                <strong>餐均消费：<span>¥2150.82</span></strong>
+            </li>
+            <li class="secondary">
+                <strong>人均消费：<span>¥59.90</span></strong>
+            </li>
+            <li class="secondary">
+                <strong>开具发票：<span>¥0.00</span></strong>
+            </li>
+        </ul>
+    </article>
+    <article id="layout-art2">
+        <div class="empty"></div>
+    </article>
+    <article id="layout-art3">
+        <div class="empty"></div>
+    </article>
+    <article id="layout-art4">
+        <div class="empty"></div>
+    </article>
+</section>
+    
+    
+    
+    <section id="login">
+        <header data-title="登陆">
+        </header>
+        <article id="loginBody" class="active scroll indented">
+            <p>
+            
+            <a class="button anchor margin bottom" data-router="section" href="#main">登陆</a>
+            
+            </p>
+        </article>
+    </section>
+
+
+
+<script src="quo.js"></script>
+<script src="lungo.js"></script>
+<script>
+Lungo.init({
+           name: 'LungoResearch',
+           version: '1.0.0.1'
+           });
+</script>
+</body>
+</html>
