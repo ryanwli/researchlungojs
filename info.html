@@ -21,123 +21,231 @@
 
 </head>
 <body>
-
     
-
-<section id="main">
-    <header data-title="聚味轩酒楼" class="extended">
-        <nav>
-            <a data-icon="left" data-router="section" href="#login"></a>
-        </nav>
-        <nav class="right">
-            <a href="#" data-router="article" data-icon="share"></a>
-        </nav>
-    </header>
-    
-    <nav class="groupbar">
-        <a href="#layout-art1" data-router="article" data-label="今天" class="active"></a>
-        <a href="#layout-art2" data-router="article" data-label="昨天" data-count="19"></a>
-        <a href="#layout-art3" data-router="article" data-label="本月"></a>
-        <a href="#layout-art4" data-router="article" data-label="本年"></a>
-    </nav>
-    
-    <article id="layout-art1" class="list scroll active">
-        <ul class="list">
-            <li style="text-align:center;" id="liSync">
-                <a data-action="loading" href="#">
-                    <strong>有新营业数据，请点击进行同步</strong>
-                    <small>最后一次的同步时间：2013-05-13 12:23:01</small>
-                </a>
-            </li>
-            <li class="accept">
-                <a data-router="section" href="#login">
-                    <div class="tag right">12</div>
-                    <strong>总营业额：<span>¥23947.00</span></strong>
-                    <small>点击可以查看食物类分的销售情况。</small>
-                </a>
-            </li>
-            <li class="cancel">
-                <strong>折扣：<span>¥0.00</span></strong>
-                <strong></strong>
-            </li>
-            <li class="cancel">
-                <strong>减免：<span>¥34.00</span></strong>
-            </li>
-            <li class="cancel">
-                <strong>抹零：<span>¥0.00</span></strong>
-            </li>
-            <li class="cancel">
-                <strong>赠送：<span>¥254.00</span></strong>
-            </li>
-            <li class="accept">
-                <a data-router="section" href="#login+">
-                    <div class="tag right">3</div>
-                    <strong>实际收金额：<span>¥23659.00</span></strong>
-                    <small>点击可以查看各种结算方式的收银秦况。</small>
-                </a>
-            </li>
-            <li class="anchor">其他营业指标：</li>
-            <li class="secondary">
-                <strong>就餐次数：<span>11次</span></strong>
-            </li>
-            <li class="secondary">
-                <strong>就餐人数：<span>395人</span></strong>
-            </li>
-            <li class="secondary">
-                <strong>餐均消费：<span>¥2150.82</span></strong>
-            </li>
-            <li class="secondary">
-                <strong>人均消费：<span>¥59.90</span></strong>
-            </li>
-            <li class="secondary">
-                <strong>开具发票：<span>¥0.00</span></strong>
-            </li>
-        </ul>
-    </article>
-    <article id="layout-art2">
-        <div class="empty"></div>
-    </article>
-    <article id="layout-art3">
-        <div class="empty"></div>
-    </article>
-    <article id="layout-art4">
-        <div class="empty"></div>
-    </article>
-</section>
-    
-    
-    
-    <section id="login">
-        <header data-title="登陆">
+    <section id="main" data-transition="slide">
+        <header data-title="登录">
         </header>
-        <article id="loginBody" class="active scroll indented">
-            <p>
-            
-            <a class="button anchor margin bottom" data-router="section" href="#main">登陆</a>
-            
-            </p>
+        
+        <article id="login-art1" class="active scroll indented splash">
+            <img src="logo.jpg" style="width:100px; height:100px; margin-top:45px; margin-bottom:3px;"/>
+            <div style="font-size:20px; font-weight:bold;color:black;margin-bottom:15px;"><strong>我客云餐饮系统</strong></div>
+            <form class="roundeds">
+                <input type="text" placeholder="登录帐号" id="txt-signup-name" value="">
+                <input type="password" placeholder="登录密码" id="txt-signup-password" value="">
+                <a data-router="section" href="#home" class="button theme anchor large" data-icon="lock" data-icon="user">登录</a>
+            </form>
         </article>
     </section>
 
+
+    <section id="home" data-transition="slide">
+        <header data-title="聚味轩酒楼" class="extended">
+            <nav class="left">
+                <a data-icon="left" data-router="section" data-action="logout" href="#"></a>
+            </nav>
+            <nav class="right">
+                <a href="#" data-router="article" data-icon="share"></a>
+            </nav>
+        </header>
+        
+        <nav class="groupbar">
+            <a href="#layout-art1" data-router="article" data-label="今天" class="active"></a>
+            <a href="#layout-art2" data-router="article" data-label="昨天" data-count="19"></a>
+            <a href="#layout-art3" data-router="article" data-label="本月"></a>
+            <a href="#layout-art4" data-router="article" data-label="本年"></a>
+        </nav>
+        
+        <article id="layout-art1" class="active list scroll indented">
+            <ul class="list">
+                <li style="text-align:center;" id="liSync">
+                    <a data-action="loading" href="#">
+                        <strong>有新营业数据，请点击进行同步</strong>
+                        <small>最后一次的同步时间：2013-05-13 12:23:01</small>
+                    </a>
+                </li>
+                <li class="accept">
+                    <a data-router="section" href="#cate">
+                        <div class="tag right">12</div>
+                        <strong>总营业额：<span>¥23947.00</span></strong>
+                        <small>点击可以查看食物分类的销售情况。</small>
+                    </a>
+                </li>
+                <li class="cancel">
+                    <strong>折扣：<span>¥0.00</span></strong>
+                    <strong></strong>
+                </li>
+                <li class="cancel">
+                    <strong>减免：<span>¥34.00</span></strong>
+                </li>
+                <li class="cancel">
+                    <strong>抹零：<span>¥0.00</span></strong>
+                </li>
+                <li class="cancel">
+                    <strong>赠送：<span>¥254.00</span></strong>
+                </li>
+                <li class="accept">
+                    <a data-router="section" href="#checkoutType">
+                        <div class="tag right">3</div>
+                        <strong>实际收金额：<span>¥23659.00</span></strong>
+                        <small>点击可以查看各种结算方式的收银情况。</small>
+                    </a>
+                </li>
+                <li class="anchor">其他营业指标：</li>
+                <li class="secondary">
+                    <strong>就餐次数：<span>11次</span></strong>
+                </li>
+                <li class="secondary">
+                    <strong>就餐人数：<span>395人</span></strong>
+                </li>
+                <li class="secondary">
+                    <strong>餐均消费：<span>¥2150.82</span></strong>
+                </li>
+                <li class="secondary">
+                    <strong>人均消费：<span>¥59.90</span></strong>
+                </li>
+                <li class="secondary">
+                    <strong>开具发票：<span>¥0.00</span></strong>
+                </li>
+            </ul>
+        </article>
+        <article id="layout-art2">
+            <div class="empty"></div>
+        </article>
+        <article id="layout-art3">
+            <div class="empty"></div>
+        </article>
+        <article id="layout-art4">
+            <div class="empty"></div>
+        </article>
+    </section>
+
+    
+
+
+
+    
+    <section id="cate" data-transition="slide">
+        <header data-title="聚味轩酒楼" >
+            <nav>
+                <a data-icon="left" data-router="section" href="#back"></a>
+            </nav>
+        </header>
+        
+        <article id="cate-art1" class="active list scroll indented">
+            <ul class="list">
+                <li class="anchor">
+                    各个食物分类的销售情况：<div class="right">销售金额/实收金额</div></li>
+                <li>
+                    <div class="right" data-count="¥1234.00/¥213.00"></div>
+                    <strong>凉菜类：<span>25%</span></strong>
+                    <form id="progress-normal" data-progress="25%">
+                    </form>
+                </li>
+                <li>
+                    <div class="right" data-count="¥1234.00/¥213.00"></div>
+                    <strong>凉菜类：<span>25%</span></strong>
+                    <form id="progress-normal" data-progress="25%">
+                    </form>
+                </li>
+                <li>
+                    <div class="right" data-count="¥1234.00/¥213.00"></div>
+                    <strong>凉菜类：<span>25%</span></strong>
+                    <form id="progress-normal" data-progress="25%">
+                    </form>
+                </li>
+                <li>
+                    <div class="right" data-count="¥1234.00/¥213.00"></div>
+                    <strong>凉菜类：<span>25%</span></strong>
+                    <form id="progress-normal" data-progress="25%">
+                    </form>
+                </li>
+                <li>
+                    <div class="right" data-count="¥1234.00/¥213.00"></div>
+                    <strong>凉菜类：<span>25%</span></strong>
+                    <form id="progress-normal" data-progress="25%">
+                    </form>
+                </li>
+                <li>
+                    <div class="right" data-count="¥1234.00/¥213.00"></div>
+                    <strong>凉菜类：<span>25%</span></strong>
+                    <form id="progress-normal" data-progress="25%">
+                    </form>
+                </li>
+                <li>
+                    <div class="right" data-count="¥1234.00/¥213.00"></div>
+                    <strong>凉菜类：<span>25%</span></strong>
+                    <form id="progress-normal" data-progress="25%">
+                    </form>
+                </li>
+                <li>
+                    <div class="right" data-count="¥1234.00/¥213.00"></div>
+                    <strong>凉菜类：<span>25%</span></strong>
+                    <form id="progress-normal" data-progress="25%">
+                    </form>
+                </li>
+            </ul>
+        </article>
+    </section>
+    
+    
+    
+    <section id="checkoutType" data-transition="slide">
+        <header data-title="聚味轩酒楼" >
+            <nav>
+                <a data-icon="left" data-router="section" href="#back"></a>
+            </nav>
+        </header>
+        
+        <article id="ct-art1" class="active list scroll indented">
+            <ul class="list">
+                <li class="anchor">
+                    各种结算方式的收银情况：<div class="right">收款金额</div></li>
+                <li>
+                    <div class="right" data-count="¥213.00"></div>
+                    <strong>现金：<span>25%</span></strong>
+                    <form id="progress-normal" data-progress="25%">
+                    </form>
+                </li>
+                <li>
+                    <div class="right" data-count="¥2133.00"></div>
+                    <strong>银联刷卡：<span>75%</span></strong>
+                    <form id="progress-normal" data-progress="25%">
+                    </form>
+                </li>
+                <li>
+                    <div class="right" data-count="¥1233.00"></div>
+                    <strong>公司宴请：<span>55%</span></strong>
+                    <form id="progress-normal" data-progress="25%">
+                    </form>
+                </li>
+                <li>
+                    <div class="right" data-count="¥23.00"></div>
+                    <strong>顾客挂帐：<span>15%</span></strong>
+                    <form id="progress-normal" data-progress="25%">
+                    </form>
+                </li>
+            </ul>
+        </article>
+    </section>
 
 
 <script src="quo.js"></script>
 <script src="lungo.js"></script>
 <script>
 Lungo.init({
-           name: 'LungoResearch',
-           version: '1.0.0.1'
-           });
+    name: 'LungoResearch',
+    version: '1.0.0.1'
+});
 
-    Lungo.Events.init({
-                      
-                      'tap section#main a[data-action=loading]': function() {
-                        Lungo.Notification.show();
-                        setTimeout(Lungo.Notification.hide, 3000);
-                        setTimeout("Lungo.Notification.success('数据同步成功', '同步时间：\r\n2013-05-13 12:23:01', 'message', 2);$$('#liSync').hide();", 3500);
-                      }
-                      
-                      });
+Lungo.Events.init({
+                  'tap section#home a[data-action=loading]': function() {
+                      Lungo.Notification.show();
+                      setTimeout(Lungo.Notification.hide, 3000);
+                      setTimeout("Lungo.Notification.success('数据同步成功', '同步时间：<br/>2013-05-13 12:23:01', 'message', 2);$$('#liSync').hide();", 3500);
+                  },'tap section#home a[data-action=logout]': function() {
+                      Lungo.Router.back();
+                  }
+});
     
 </script>
 </body>
