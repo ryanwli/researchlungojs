@@ -13,6 +13,7 @@
 		B3985835176FF52A0006CFD2 /* lungo.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = lungo.js; sourceTree = "<group>"; };
 		B3985836176FF52A0006CFD2 /* quo.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = quo.js; sourceTree = "<group>"; };
 		B3985837176FF52A0006CFD2 /* theme.lungo.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = theme.lungo.css; sourceTree = "<group>"; };
+		B3985848177300420006CFD2 /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -25,6 +26,7 @@
 				B3985835176FF52A0006CFD2 /* lungo.js */,
 				B3985836176FF52A0006CFD2 /* quo.js */,
 				B3985837176FF52A0006CFD2 /* theme.lungo.css */,
+				B3985848177300420006CFD2 /* logo.jpg */,
 			);
 			sourceTree = "<group>";
 		};
